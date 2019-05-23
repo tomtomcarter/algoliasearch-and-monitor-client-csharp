@@ -1,4 +1,4 @@
-﻿using Algolia.Monitoring.Client;
+using Algolia.Monitoring.Client;
 using Algolia.Monitoring.Exception;
 using Algolia.Monitoring.Model;
 using System;
@@ -16,7 +16,16 @@ namespace Algolia.Monitoring.Console
 
         public static async Task TestAlgoliaMonitoringClient()
         {
-            var client = new MonitoringClient("HHH17WINF0", "6cbbf0926d3cdb977280098b2523e71b");
+            System.Console.WriteLine("~~*\\#/*~~ Algolia Client API playground to test the MonitoringClient ~~*\\#/*~~");
+
+            System.Console.WriteLine("please enter Algolia applicationId: ");
+            var applicationId = System.Console.ReadLine();
+            System.Console.WriteLine("please enter Algolia monitoringApiKey: ");
+            var monitoringApiKey = System.Console.ReadLine();
+
+
+
+            var client = new MonitoringClient(applicationId, monitoringApiKey);
 
             System.Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.Console.WriteLine("### Algolia Monitoring API - Status - Get current ###");
@@ -60,7 +69,7 @@ namespace Algolia.Monitoring.Console
 
 
 
-           
+
         }
 
         #region HidePollutingStuff
