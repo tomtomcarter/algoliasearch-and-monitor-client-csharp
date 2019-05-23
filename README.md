@@ -17,8 +17,13 @@ This idea here was to develop an API client to handle the [4 status endpoints](h
 ## Getting started
 
 You can use the Algolia c# Search API Client library.
+
 A new MonitoringClient class has been added.
+
+To build the solution you can open the  ~/src/Algolia.Search.sln
+
 To use the library in a project, you can clone the GitHub repo and build the `Algolia.Search` project located in the ~/src folder.
+
 Alternatively you can find in the ~/dist folder of the GitHub repo a built version of the libraries if you don't want to bother building the solution. Simply reference this Algolia.Search.dll  into you project.
 
 You may use it as per sample below.
