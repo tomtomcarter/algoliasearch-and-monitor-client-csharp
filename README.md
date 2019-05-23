@@ -19,7 +19,7 @@ This idea here was to develop an API client to handle the [4 status endpoints](h
 You can use the Algolia c# Search API Client library.
 A new MonitoringClient class has been added.
 To use the library in a project, you can clone the GitHub repo and build the `Algolia.Search` project located in the ~/src folder.
-Alternatively you can find in the ~/dist folder of the GitHub repo a buit version of the libraries if you don't want to bother building the solution. Simply reference this Algolia.Search.dll  into you project.
+Alternatively you can find in the ~/dist folder of the GitHub repo a built version of the libraries if you don't want to bother building the solution. Simply reference this Algolia.Search.dll  into you project.
 
 You may use it as per sample below.
 
@@ -60,7 +60,7 @@ foreach (var server in response2.Incidents)
 
 ```
 
-The return object are POCO classes as shown below:
+The return objects are POCO classes as shown below:
 
 ### Status endpoint
 ```csharp
@@ -128,7 +128,7 @@ public class IncidentDetails
     }
 ```
 
-_Note_ : You may also run the Algolia.Search.MonitoringPlayground console app to try the app once you have build the solution. It covers all 4 cases
+_Note_ : You may also run the Algolia.Search.MonitoringPlayground console app to try the app once you have built the solution. It covers all 4 cases
 
 ## My choises
 
@@ -136,9 +136,12 @@ I initialy started building a very small client* to cover the following 2 API ca
 - `/1/status`
 - `/1/status/{servers}`
 
-Then I realized it would be smarter to enhance the existing Search API Client library which already had other client then the SeachClient.
+Then I realized it would be smarter to enhance the existing Search API Client library which already had others clients than the SeachClient.
 I built on top of the existing library.
 
 
-
 *You may find, build and run this client in the ~/src_discarded folder of the GitHub repo.
+
+
+## Sources
+The original repository can be found [here](https://github.com/algolia/algoliasearch-client-csharp)
