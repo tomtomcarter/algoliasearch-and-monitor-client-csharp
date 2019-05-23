@@ -1,0 +1,3 @@
+﻿Please setup the following 2 environment variables on your machine before you run the tests
+- ALGOLIA_APPLICATION_ID_TEST
+- ALGOLIA_API_KEY_TEST
